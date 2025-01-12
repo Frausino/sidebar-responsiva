@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Responsiva</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome (para ícones) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Arquivo CSS externo -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <!-- Botão para abrir/fechar a sidebar -->
+      <div id="menu-toggle-superior">
+        <h2 class="marca">JESUS C.</h2>
+        <img src="x.png" alt="Logo" class="logo" />
+        <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+      </div>
+      <!-- Menu de navegação -->
+      <nav class="nav flex-column mt-4">
+        <a href="#" class="nav-link">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </a>
+        <a href="#" class="nav-link">
+          <i class="fas fa-star"></i>
+          <span>Favoritos</span>
+        </a>
+        <a href="#" class="nav-link">
+          <i class="fas fa-box"></i>
+          <span>Produtos</span>
+        </a>
+        <a href="#" class="nav-link">
+          <i class="fas fa-shield-alt"></i>
+          <span>Security</span>
+        </a>
+        <a href="#" class="nav-link">
+          <i class="fas fa-cog"></i>
+          <span>Configurações</span>
+        </a>
+      </nav>
+      <hr />
+
+      <!-- Dropdown no canto inferior esquerdo -->
+      <div class="dropdown profile-dropdown">
+        <a
+          href="#"
+          class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img
+            src="https://github.com/mdo.png"
+            alt=""
+            width="32"
+            height="32"
+            class="rounded-circle me-2"
+          />
+          <strong class="profile-name">mdo</strong>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+          <li><a class="dropdown-item" href="#">New project...</a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li><a class="dropdown-item" href="#">Sign out</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div id="content" class="container">
+      <h1>Conteúdo da Página</h1>
+      <p>Aqui vai o conteúdo principal da sua página.</p>
+    </div>
+
+    <!-- Bootstrap JS (opcional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome JS (para ícones) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <!-- Arquivo JS externo -->
+    <script src="script.js"></script>
+  </body>
+</html>
